@@ -1,0 +1,197 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 40px;
+  color: #e21e5f;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+  background: #1a1a1a;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  color: #f0f0f0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1db954;
+}
+
+img {
+  width: 300px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px rgba(255, 0, 150, 0.5);
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff00ff;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.reproductor {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.reproductor button, .reproductor a {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1db954;
+}
+
+.reproductor button:hover, .reproductor a:hover {
+  color: #1ed760;
+}
+
+.controles {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.barra-progreso {
+  width: 300px;
+  height: 5px;
+  background-color: #444;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#progreso {
+  height: 100%;
+  width: 0%;
+  background-color: #1db954;
+  transition: width 0.1s linear;
+}
+
+.biografia img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-volver {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e21e5f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+.btn-volver:hover {
+  background: #ff4081;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.galeria-grid div {
+  text-align: center;
+}
+
+.galeria-grid img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.galeria-grid p {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+/* --- Mejora responsive y layout --- */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query ejemplo */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    text-align: center;
+  }
+}/*# sourceMappingURL=estilos.css.map */
